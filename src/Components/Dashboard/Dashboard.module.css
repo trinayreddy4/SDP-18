@@ -1,0 +1,20 @@
+.container{
+    margin: 100px;
+    width: 80%;
+    min-height: 60vh;
+    /* background: #38bdf8; */
+    display: flex;
+    flex-direction: column;
+}
+.subhead{
+    padding-top: 10px;
+    height: 5vh;
+    width: 60vh;
+    /* background: grey; */
+}
+.subhead>h1{
+    font-size: 26px;
+}
+.sub{
+    padding-top: 25px;
+}

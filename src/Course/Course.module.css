@@ -1,0 +1,48 @@
+.container{
+    width:100%;
+    background-color: #f8f9fa;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-bottom: 1px solid black;
+}
+.courseHead{
+    padding-top: 15px;
+    padding-left: 20px;
+    text-align: left;
+}
+.courseHead a{
+    font-size: 24px;
+    font-weight: 600;
+}
+.facultyname{
+    margin-top: 5px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.facultyname pre{
+    /* padding-left: 20px; */
+    font-size: 24px;
+    font-family:"poppins",sans-serif;
+    font-weight: 500;
+}
+.coursebtncontainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.btn{
+    all:unset;
+    border: 1px solid black;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.btn:hover{
+    background: black;
+    color: white;
+    transition: 0.3s ease-in;
+}

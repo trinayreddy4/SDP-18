@@ -1,6 +1,8 @@
 .container{
     width: 100%;
     /* height: ; */
+    position: static;
+    bottom: 0;
 }
 .foote{
     background: #F1EFEF;

@@ -8,14 +8,14 @@ import NavBar from './Components/NavBar/NavBar';
 function App() {
   return (
     <div className="App container-fluid">
-      <div>
+      <div className="cont">
         <div className='navb'>
               <NavBar/>
         </div>
         <div className='content'>
               {/* <Dashboard/> */}
-              <Login/>
-              {/* <Courses/> */}
+              {/* <Login/> */}
+              <Courses/>
         </div>
         <div className='footb'>
               <Footer/>

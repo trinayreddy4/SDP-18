@@ -1,10 +1,16 @@
 import React from 'react';
 import styles from './Courses.module.css';
+import Course from '../../Course/Course';
 export default function Courses() {
   return (
     <div>
-        <div className={styles.Container}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quae cum nisi quisquam labore tempora repellendus modi! Delectus, quaerat vero! Officia, quisquam! Corporis, sequi nisi!
+        <div className={styles.headi}>
+          <h1>Courses</h1>
+        </div>
+        <div className={styles.container}>
+          <Course courseName="MERN STACK 22SDCS05A" facultyName="KL123" />
+          <Course courseName="Mathematical Programming" facultyName="DAA"/>
+         <Course facultyName="Sridhar Uncle" courseName="DBMS" />
         </div>
     </div>
   )

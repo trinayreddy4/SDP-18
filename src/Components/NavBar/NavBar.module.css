@@ -21,24 +21,30 @@ body{
 	display: flex;
 	gap: 24px;
 }
-.menu a{
-	font-weight: 600;
-	font-size: 20px;
-	color: black;
-}
-a:link{
-	text-decoration: none;
-	color: black;
-}
-.menu a::after{
-	text-decoration: none;
-	color: black;
-}
-.menu a:hover{
-	
-}
 .container{
 	display: flex;
 	align-items: center;
 	gap: 660px;
+}
+a{
+	position: relative;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	padding: 0 3px;
+}
+a:after{
+	content: "";
+	position: absolute;
+	background-color: black;
+	height: 3px;
+	width: 0;
+	left:0;
+	bottom:-10px;
+	transition: 0.3s;
+}
+a:hover::after{
+	width:100%;
 }

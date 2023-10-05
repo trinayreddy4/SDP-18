@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Courses.module.css';
-import Course from '../../Course/Course';
+import Course from '../Course/Course';
 export default function Courses() {
   return (
     <div>

@@ -8,9 +8,20 @@ export default function Login() {
         <div className={styles.loginContainer}>
             <div className={styles.login}>
                 <div className={styles.loginText}>
-                    <div>
-                    <h1>On The Way To<br/> Learning</h1>
+                    <div className={styles.outerheadings}>
+                        <h1>
+                            On The Way To
+                            <div className={styles.innerheadings}>
+                                 <span>
+                                    Learning <br/>
+                                    Masterning <br/>
+                                    Developing <br/>
+                                    Accomplish <br/>
+                                </span>                               
+                            </div>    
+                        </h1>                        
                     </div>
+                    
                 </div>
                 <div className={styles.form}>
                     <div className={styles.formContainer}>

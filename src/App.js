@@ -14,8 +14,8 @@ function App() {
         </div>
         <div className='content'>
               {/* <Dashboard/> */}
-              {/* <Login/> */}
-              <Courses/>
+              <Login/>
+              {/* <Courses/> */}
         </div>
         <div className='footb'>
               <Footer/>

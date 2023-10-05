@@ -20,6 +20,7 @@
     font-size: 100px;
     font-weight: 800;
     color:#38bdf8;
+    line-height: 1;
     font-family: 'Poppins', sans-serif;
 }
 .form{
@@ -76,4 +77,53 @@
     background-color: black;
     color: #f8f9fa;
     transition: 100 ease-in-out;
+}
+span{
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    font-size: 100px;
+    font-weight: 800;
+    color:#38bdf8;
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+}
+.innerheadings{
+    border: 0px solid #ddd;
+    height: 104px;
+    width: 100%;
+    line-height: 50px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.innerheadings span{
+    position: relative;
+    animation: animation 10s ease infinite;
+}
+
+@keyframes animation {
+    0%,100%{
+        top:0;
+    }
+    20%{
+        top: 0;
+    }
+    25%{
+        top:-105px;
+    }
+    45%{
+        top:-105px;
+    }
+    50%{
+        top:-210px;
+    }
+    70%{
+        top:-210px;
+    }
+    75%{
+        top:-312px;
+    }
+    95%{
+        top:-312px;
+    }
 }

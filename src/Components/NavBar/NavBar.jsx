@@ -10,10 +10,10 @@ export default function NavBar() {
                 </div>
                 <div>
                     <ul className={styles.menu}>
+                        <li><a href="#">Login</a></li>
                        <li><a href='#'>Dashboard</a></li>
                        <li><a href='#'>My Courses</a></li>
-                       <li><a href='#'>My Submissions</a></li>
-                        <li><a href='#'>Quizes</a></li>
+                       <li><a href='#'>My Profile</a></li>
                     </ul>
                 </div>
             </div>

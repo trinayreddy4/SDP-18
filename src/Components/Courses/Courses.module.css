@@ -3,6 +3,10 @@
     background-color: #f8f9fa;
     height: 200px;
     margin: 20px auto;
+    /* margin-bottom: 25px; */
+}
+.container::-webkit-scrollbar {
+    display: none;
 }
 .headi{
     width: 60%;

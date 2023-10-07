@@ -1,4 +1,5 @@
 import './App.css';
+import CoursePage from './Components/CoursePage/CoursePage';
 import Courses from './Components/Courses/Courses';
 import Dashboard from './Components/Dashboard/Dashboard';
 import Footer from './Components/Footer/Footer';
@@ -15,7 +16,8 @@ function App() {
         <div className='content'>
               {/* <Dashboard/> */}
               {/* <Login/> */}
-              <Courses/>
+              {/* <Courses/> */}
+              <CoursePage courseName="Mern Stack"/>
         </div>
         <div className='footb'>
               <Footer/>

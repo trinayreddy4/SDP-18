@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.icon{
+    padding: 16px;
+}
+.conte{
+    display: flex;
+    width: 100%;
+    border-left:1px solid black ;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 300px; */
+    font-size: 20px;
+    font-weight: 600;
+}
+.conte:hover{
+    background: black;
+    color:white;
+    transition: 0.3s ease-in-out;
+}

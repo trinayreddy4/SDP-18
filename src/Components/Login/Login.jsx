@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Login.module.css';
-import { TextField } from '@mui/material';
+import { IconButton, InputAdornment, TextField } from '@mui/material';
+import { Visibility, VisibilityOff } from '@mui/icons-material';
+import { useAuth } from '../../Utils/Auth';
+import { useNavigate } from 'react-router-dom';
 export default function Login() {
-    
+  const [userName,setUsername]=useState('');
+  const [password,setPassword]=useState('');  
+  const auth=useAuth();
+  const navigate=useNavigate();
+  const handleClick=(e)=>{
+    e.preventDefault();
+    auth.login(userName,password);
+    navigate('/');
+  }
+  
+  
+
   return (
     <>
         <div className={styles.loginContainer}>
@@ -28,13 +42,28 @@ export default function Login() {
                         <form>
                             <div className={styles.formInput}>
                                 <div>
-                                <TextField id="standard-size-normal"  label="Username" variant="standard" />
+                                <TextField 
+                                id="standard-size-normal"  
+                                label="Username" 
+                                variant="standard" 
+                                onChange={(e)=>{
+                                  setUsername(e.target.value);
+                                }}
+                                />
                                 </div>
                                 <div>
-                                <TextField id="standard-size-normal"  label="Password" variant="standard" />
+                                <TextField 
+                                id="standard-size-normal"  
+                                label="Password" 
+                                variant="standard" 
+                                type='password' 
+                                onChange={(e)=>{
+                                  setPassword(e.target.value);
+                                }}
+                                />
                                 </div>
                                 <div>
-                                    <button className={styles.subbtn}>
+                                    <button className={styles.subbtn} onClick={handleClick}>
                                         Login
                                     </button>
                                 </div>

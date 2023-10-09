@@ -1,7 +1,14 @@
 import React from 'react'
 import styles from './NavBar.module.css';
+import { Link, NavLink } from 'react-router-dom';
 export default function NavBar() {
-  return (
+    const style=({isActive})=>{
+        return{
+        fontWeight: isActive ? '700' : '400',
+        color: isActive ? '#38bdf8':'black',
+        }
+    }
+    return (
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div className={styles.container}>
@@ -10,10 +17,10 @@ export default function NavBar() {
                 </div>
                 <div>
                     <ul className={styles.menu}>
-                        <li><a href="#">Login</a></li>
-                       <li><a href='#'>Dashboard</a></li>
-                       <li><a href='#'>My Courses</a></li>
-                       <li><a href='#'>My Profile</a></li>
+                        <li><NavLink >Login</NavLink></li>
+                       <li><NavLink to='/' style={style}>Dashboard</NavLink></li>
+                       <li><NavLink to='/myCourses' style={style} >My Courses</NavLink></li>
+                       <li><NavLink href='#'>My Profile</NavLink></li>
                     </ul>
                 </div>
             </div>

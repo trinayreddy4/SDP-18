@@ -8,7 +8,7 @@ import NavBar from './Components/NavBar/NavBar';
 import CoursePage from './Components/CoursePage/CoursePage'
 import NotFound from './Components/NotFound/NotFound'
 import { AuthProvider } from './Utils/Auth';
-import Section from './Components/Section/Section';
+import StudentAdd from './Components/StudentAdd/StudentAdd';
 function App() {
   return (
     <AuthProvider>
@@ -17,9 +17,9 @@ function App() {
         <div className='navb'>
               <NavBar/>
         </div>
-        <div className='content'>    
-                 {/* <Section/>           */}
-              <Routes>
+        <div className='content'>     
+              <StudentAdd/>    
+              {/* <Routes>
                   <Route path='/' element={<Dashboard/>} />
                   <Route path='/myCourses' element={<Courses/>} />
                   <Route path='/login' index element={<Login/>} />
@@ -31,7 +31,7 @@ function App() {
                   <Route path='/myCourses/aoop'  element={<CoursePage courseName="Advanced object oriented Programming" />} />
                   <Route path='/404' element={<NotFound/>} />
                   <Route path='*' element={<Navigate to="/404"/>} />
-              </Routes>
+              </Routes> */}
         </div>
         <div className='footb'>
               <Footer/>

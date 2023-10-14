@@ -1,10 +1,17 @@
 import React from 'react';
 import styles from './CoursePage.module.css';
 import Content from '../Content/Content';
+import { useAuth } from '../../Utils/Auth';
+import { Navigate } from 'react-router-dom';
 export default function CoursePage({courseName}) {
-  return (
+    const auth=useAuth();
+  // console.log(!auth?.user)
+  if (!auth.user) {
+    return <Navigate to="/login" replace />;
+  }
+    return (
     <div className={styles.container}>
-      <div>
+      <div className={styles.courseHead}>
            <h1>{courseName}</h1>
       </div>
       <div className={styles.courseItems}>

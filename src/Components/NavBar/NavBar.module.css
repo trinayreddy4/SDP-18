@@ -24,7 +24,7 @@ body{
 .container{
 	display: flex;
 	align-items: center;
-	gap: 660px;
+	gap: 850px;
 }
 a{
 	position: relative;
@@ -47,4 +47,9 @@ a:after{
 }
 a:hover::after{
 	width:100%;
+}
+.logoutbtn{
+	all:unset;
+	color: black;
+	font-size: 20px;
 }

@@ -7,14 +7,13 @@
     flex-direction: column;
 }
 .subhead{
-    padding-top: 10px;
     height: 5vh;
     width: 60vh;
     /* background: grey; */
 }
-.subhead>h1{
-    font-size: 26px;
-}
 .sub{
-    padding-top: 25px;
+    margin-top: 25px;
+    
+    height: 300px;
+    background-color:#f8f9fa;
 }

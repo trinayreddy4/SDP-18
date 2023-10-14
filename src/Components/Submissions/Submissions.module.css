@@ -1,11 +1,10 @@
 .cont{
-    
-    margin-top: 5px;
+    margin: 20px 15px 15px 15px;
+    padding-top: 15px;
+    height: 6vh;
+    width: 90%;
 }
 .submissions{
-    margin-top: 10px;
-    min-height: 38vh;
-    min-width: 90%;
     background-color:#f8f9fa;
 }
 .submi{

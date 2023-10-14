@@ -9,8 +9,10 @@ export default function Courses() {
         </div>
         <div className={styles.container}>
           <Course courseName="MERN STACK 22SDCS05A" facultyName="KL123"  />
-          <Course courseName="Mathematical Programming" facultyName="DAA"/>
-          <Course facultyName="Sridhar Uncle" courseName="DBMS" />
+          <Course courseName="Mathematical Programming" facultyName="KL123"/>
+          <Course facultyName="KL123" courseName="DBMS" />
+          <Course facultyName="KL123" courseName="Network Protocol and Security" />
+          <Course facultyName="KL123" courseName="AOOP" />
         </div>
     </div>
   )

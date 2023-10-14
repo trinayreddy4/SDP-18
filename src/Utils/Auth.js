@@ -9,13 +9,13 @@ export const AuthProvider =({children})=>{
         setUser(user);
         setPass(pass)
     }
-    const logout=(user,pass)=>{
+    const logout=()=>{
         setUser(null);
         setPass(null);
     }
 
     return(
-        <AuthContext.Provider value={{user,login,logout}}>
+        <AuthContext.Provider value={{user,pass,login,logout}}>
             {children}
         </AuthContext.Provider>
     )

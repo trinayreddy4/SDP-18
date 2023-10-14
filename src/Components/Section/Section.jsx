@@ -10,7 +10,7 @@ const Section = () => {
         <div className={styles.boxContainer}>
             <form action="">
                 <div className={styles.secName}>
-
+            
                 </div>
             </form>
         </div>

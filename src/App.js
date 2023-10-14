@@ -9,6 +9,8 @@ import CoursePage from './Components/CoursePage/CoursePage'
 import NotFound from './Components/NotFound/NotFound'
 import { AuthProvider } from './Utils/Auth';
 import StudentAdd from './Components/StudentAdd/StudentAdd';
+import FacultyAdd from './Components/FacultyAdd/FacultyAdd';
+import GradesAssign from './Components/GradesAssign/GradesAssign';
 function App() {
   return (
     <AuthProvider>
@@ -18,7 +20,7 @@ function App() {
               <NavBar/>
         </div>
         <div className='content'>     
-              <StudentAdd/>    
+              <GradesAssign/>    
               {/* <Routes>
                   <Route path='/' element={<Dashboard/>} />
                   <Route path='/myCourses' element={<Courses/>} />

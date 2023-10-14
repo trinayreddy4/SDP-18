@@ -10,8 +10,9 @@ const Section = () => {
         <div className={styles.boxContainer}>
             <form action="">
                 <div className={styles.secName}>
-            
+
                 </div>
+                <input type="submit" className={styles.submibtn} />
             </form>
         </div>
     </div>

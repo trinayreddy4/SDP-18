@@ -16,11 +16,11 @@ const Dashboard = () => {
             <h1 >Upcoming Submissions</h1>
     </div>
     <div className={styles.sub}>
-      <Submissions/>
+      <Submissions event="NPS ALM" deadline="12-11-23"/>
       <br />
-      <Submissions/>
+      <Submissions event="AOOP ALM" deadline="10-11-23"/>
       <br />
-      <Submissions/>
+      <Submissions event="MERN ALM" deadline="07-11-23"/>
     </div>
     {/* <div className={styles.subhead}>
             <h1 >Upcoming Exams</h1>

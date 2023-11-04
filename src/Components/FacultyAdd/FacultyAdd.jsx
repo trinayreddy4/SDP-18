@@ -7,13 +7,13 @@ const FacultyAdd = () => {
         <h1>Add Faculty</h1>    
     </div>
     <div className={styles.boxContainer}>
-        <form action="">
+        <form action="http://localhost:5000/api/addStudent" method='post'>
             <div className={styles.secName}>
               <div>
                   <label className={styles.secnameHead}>Enter Faculty Name     :</label>
               </div>
               <div>
-                    <input type="text" className={styles.secnametext} />  
+                    <input type="text" name='name' className={styles.secnametext} />  
               </div>
             </div>
             <div className={styles.secName}>
@@ -21,7 +21,7 @@ const FacultyAdd = () => {
               <label className={styles.secnameHead}>Enter Email Address:</label>
               </div>
               <div>
-              <input type="text" className={styles.secnametext} />
+              <input type="text" name='email' className={styles.secnametext} />
               </div>
             </div>
             
@@ -30,7 +30,7 @@ const FacultyAdd = () => {
               <label className={styles.secnameHead}>Enter Mobile Number:</label>
               </div>
               <div>
-              <input type="text" className={styles.secnametext} />
+              <input type="text" name='phno' className={styles.secnametext} />
               </div>
             </div>
             
@@ -39,7 +39,7 @@ const FacultyAdd = () => {
               <label className={styles.secnameHead}>Enter Employee ID:</label>
               </div>
               <div>
-              <input type="text" className={styles.secnametext} />
+              <input type="text" name="empId" className={styles.secnametext} />
               </div>
             </div>
             <input type="submit" className={styles.submibtn} />

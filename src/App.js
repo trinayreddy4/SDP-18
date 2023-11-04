@@ -11,6 +11,7 @@ import { AuthProvider } from './Utils/Auth';
 import StudentAdd from './Components/StudentAdd/StudentAdd';
 import FacultyAdd from './Components/FacultyAdd/FacultyAdd';
 import GradesAssign from './Components/GradesAssign/GradesAssign';
+import Section from './Components/Section/Section';
 function App() {
   return (
     <AuthProvider>
@@ -20,8 +21,8 @@ function App() {
               <NavBar/>
         </div>
         <div className='content'>     
-              <GradesAssign/>    
-              {/* <Routes>
+                {/* <StudentAdd/> */}
+              <Routes>
                   <Route path='/' element={<Dashboard/>} />
                   <Route path='/myCourses' element={<Courses/>} />
                   <Route path='/login' index element={<Login/>} />
@@ -33,7 +34,7 @@ function App() {
                   <Route path='/myCourses/aoop'  element={<CoursePage courseName="Advanced object oriented Programming" />} />
                   <Route path='/404' element={<NotFound/>} />
                   <Route path='*' element={<Navigate to="/404"/>} />
-              </Routes> */}
+              </Routes>
         </div>
         <div className='footb'>
               <Footer/>

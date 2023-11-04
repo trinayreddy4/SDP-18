@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Submissions.module.css';
-export default function Submissions() {
+export default function Submissions({event,deadline}) {
   return (
     <div className={styles.cont}>
       <div className={styles.submissions}>
@@ -11,10 +11,10 @@ export default function Submissions() {
               </i>
               </div>
               <div className={styles.desc}>
-                event
+                {event}
               </div>
               <div className={styles.deadline}>
-                DeadLine Date
+                {deadline}
               </div>
             </div>
       </div>

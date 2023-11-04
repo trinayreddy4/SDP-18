@@ -9,11 +9,33 @@ export default function Login() {
   const [password,setPassword]=useState('');  
   const auth=useAuth();
   const navigate=useNavigate();
+  const database = [
+    {
+      username: "user1",
+      password: "pass1"
+    },
+    {
+      username: "user2",
+      password: "pass2"
+    }
+  ];
   const handleClick=(e)=>{
     e.preventDefault();
-    auth.login(userName,password);
-    navigate('/');
+
+  var { uname, pass } = document.forms[0];
+  const userData = database.find((user) => user.username === userName);
+  if (userData) {
+    if (userData.password !== password) {
+      
+      alert("Incorrect Password");
+    } else {
+        auth.login(userName,password);
+        navigate('/');    
+    }
+  } else {
+    alert("User not found")
   }
+     }
   
   
 
